@@ -5,7 +5,9 @@ title: Home
 
 <p style="text-align: center;">
   Github   • <a href="https://github.com/vitor-schipani">vitor-schipani</a>
+
   LinkedIn • <a href="https://www.linkedin.com/in/vitor-luiz-schipani">vitor-luiz-schipani</a>
+
   Email    • <a href="https://github.com/vitor-schipani">vitorschipani [at] outlook {dot} com</a>
 </p>
 
