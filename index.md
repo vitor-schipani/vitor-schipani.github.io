@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+<p style="text-align: center;">
+  <a href="https://github.com/vitor-schipani">GitHub</a> | vitorschipani [at] outlook {dot} com
+</p>
+
 ## Posts
 
 <ul>
