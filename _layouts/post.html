@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <a class="back" href="{{ '/' | relative_url }}">← All posts</a>
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span class="dot">·</span>
+      {% assign words = content | strip_html | number_of_words %}{{ words | divided_by: 220 | at_least: 1 }} min read
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="standfirst">{{ page.description }}</p>{% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a class="back" href="{{ '/' | relative_url }}">← All posts</a>
+  </footer>
+</article>

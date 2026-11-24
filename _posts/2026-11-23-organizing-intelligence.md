@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Organizing Intelligence"
 date: 2026-11-23
+description: "Thoughts on \"Organizing Intelligence\" by Alex Imas, Andrew Koh, and Shane Legg (Google DeepMind, October 2026)."
+math: true
 ---
-
-<a href="/">← Back</a>
-
-*Thoughts on "Organizing Intelligence" by Alex Imas, Andrew Koh, and Shane Legg (Google DeepMind, October 2026).*
 
 On October 29th 2026, Google DeepMind has published the article *organizing intelligence* which postulates how AI will bring changes to the economic systems we have today. The article completely dodges the possibility of a super intelligent AI destroying humanity altogether. Instead it treats AI as new cheap workers pouring into the economy and competing with humans for tasks and jobs.
 
@@ -28,7 +26,7 @@ $$
 L = \frac{n}{\displaystyle\sum_{j=1}^{n} \frac{1}{\bar{y}_j}}
 $$
 
-<small><em>What the harmonic mean is really saying: if one average skill sucks, everything sucks.</em></small>
+<p class="aside">What the harmonic mean is really saying: if one average skill sucks, everything sucks.</p>
 
 For example, take a company that is great at engineering and design, with an average skill of 9 in both, but bad at sales, with an average of 1:
 
@@ -38,9 +36,9 @@ $$
 
 A plain average would score this company at 6.3, but its competence is only 2.45: the weak sales team drags down everything else. Raising sales from 1 to just 3 would more than double $$L$$ to 5.4.
 
-<p style="text-align: center;">
-  <img src="/assets/images/organizing-intelligence-competence.svg" alt="Line chart: with engineering and design fixed at 9, company competence rises from 2.45 to 9 as the sales skill goes from 1 to 9, while the plain average only moves from 6.3 to 9." style="max-width: 100%;">
-</p>
+<figure>
+  <img src="/assets/images/organizing-intelligence-competence.svg" alt="Line chart: with engineering and design fixed at 9, company competence rises from 2.45 to 9 as the sales skill goes from 1 to 9, while the plain average only moves from 6.3 to 9.">
+</figure>
 
 In other words, in this model the weakest link of the chain snaps the company's competence. This is unlikely to be literally true in real life, but it is a reasonable modelling choice.
 
@@ -68,9 +66,9 @@ $$
 
 Working alone ($$m = 1$$), the same coder produces only 3.6. But bigger is not always better: in a firm of 20, output per worker falls back to about 4.5, because attention is now split across too many colleagues.
 
-<p style="text-align: center;">
-  <img src="/assets/images/organizing-intelligence-coordination.svg" alt="Line chart: output per worker by firm size for average coordination of 0.65, 0.75 and 0.85. The peaks are at firm sizes 4, 6 and 11, and higher coordination gives a higher and later peak." style="max-width: 100%;">
-</p>
+<figure>
+  <img src="/assets/images/organizing-intelligence-coordination.svg" alt="Line chart: output per worker by firm size for average coordination of 0.65, 0.75 and 0.85. The peaks are at firm sizes 4, 6 and 11, and higher coordination gives a higher and later peak.">
+</figure>
 
 ***
 
@@ -86,11 +84,10 @@ The same logic applies to coordination. The paper adds a third type of worker, t
 
 Figure 3 of the paper places these firms on a map of competence against coordination:
 
-<p style="text-align: center;">
-  <img src="/assets/images/organizing-intelligence-figure-3-annotated.svg" alt="Figure 3 of the paper: a map with task competence on the horizontal axis and coordination on the vertical axis. A lone coder or writer, the mosaic team, the mosaic team plus coordinator, and a lone coordinator are marked as points. Shaded regions mark four AI regimes: Minimal AGI, Supercompetent AI, Supercooperative AI and ASI. A dashed orange circle added by the author of this post marks a guess for today's AI: below the Minimal AGI region in coordination, and just left of the Supercompetent AI region in competence." style="max-width: 100%;">
-  <br>
-  <small><em>Figure 3 from Imas, Koh and Legg, "Organizing Intelligence" (2026). The dashed orange circle is my addition: it marks where I think AI is today.</em></small>
-</p>
+<figure class="paper">
+  <img src="/assets/images/organizing-intelligence-figure-3-annotated.svg" alt="Figure 3 of the paper: a map with task competence on the horizontal axis and coordination on the vertical axis. A lone coder or writer, the mosaic team, the mosaic team plus coordinator, and a lone coordinator are marked as points. Shaded regions mark four AI regimes: Minimal AGI, Supercompetent AI, Supercooperative AI and ASI. A dashed orange circle added by the author of this post marks a guess for today's AI: below the Minimal AGI region in coordination, and just left of the Supercompetent AI region in competence.">
+  <figcaption>Figure 3 from Imas, Koh and Legg, "Organizing Intelligence" (2026). The dashed orange circle is my addition: it marks where I think AI is today.</figcaption>
+</figure>
 
 A lone coder or writer sits at the bottom left, with competence 1.8. The mosaic team moves far to the right, to competence 5, at the same coordination. Adding a coordinator moves the team up and slightly to the left. The values 1.69 and 0.78 on the axes are the average competence and coordination of the humans working alone. The shaded regions are where the paper goes next: the different regimes of AI, defined by where its competence and coordination sit relative to the humans.
 
@@ -139,5 +136,3 @@ That gives a clear picture of who wins and who loses:
 The third is that wages can fall before jobs do. In the paper's minimal AGI example every human stays employed, but pay drops because AI makes output cheaper. Unemployment is not the first symptom to look for.
 
 All of this holds only while AI coordination stays below 1. Once AI agents can work together well enough that bigger teams are always better, the model flips: one giant AI firm, and coordinators are the ones who lose their jobs. So the number to watch is not how well a model scores on a benchmark, which measures competence, but how well many copies of it work together.
-
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
