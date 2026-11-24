@@ -181,6 +181,24 @@ main { padding: 3.2rem 0 4rem; }
 .post-list a:hover::after { opacity: 1; transform: none; }
 .post-list .title, .post-list .desc { padding-right: 2rem; }
 
+/* ---------- Tags ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0; padding: 0; }
+.tags > * {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.38em 0.8em 0.34em;
+}
+.post-list .tags { grid-column: 2; margin-top: 0.7rem; }
+.post-header .tags { margin: 0 0 0.9rem; }
+
 /* ---------- Post ---------- */
 .back {
   font-family: var(--mono);
@@ -193,7 +211,7 @@ main { padding: 3.2rem 0 4rem; }
 .back:hover { color: var(--accent); }
 
 .post-header { margin-bottom: 2.6rem; }
-.post-header .meta { margin: 2.2rem 0 0.7rem; color: var(--accent); }
+.post-header .meta { margin: 2.2rem 0 0.8rem; color: var(--accent); }
 .post-header .meta .dot { margin: 0 0.4em; color: var(--ink-faint); }
 .post-header h1 {
   font-family: var(--display);
@@ -378,7 +396,7 @@ main { padding: 3.2rem 0 4rem; }
   main { padding-top: 2.2rem; }
   .post-list a, .contact li { grid-template-columns: 1fr; }
   .post-list time { grid-row: auto; margin-bottom: 0.35rem; }
-  .post-list .desc { grid-column: 1; }
+  .post-list .desc, .post-list .tags { grid-column: 1; }
   .contact li { margin-bottom: 0.5rem; }
   .prose figure { padding: 0.5rem 0.5rem 0.3rem; margin-inline: -0.4rem; }
 }

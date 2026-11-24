@@ -22,6 +22,7 @@ title: Home
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
         <span class="title">{{ post.title }}</span>
         {% if post.description %}<span class="desc">{{ post.description }}</span>{% endif %}
+        {% if post.tags.size > 0 %}<span class="tags">{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}</span>{% endif %}
       </a>
     </li>
     {% endfor %}

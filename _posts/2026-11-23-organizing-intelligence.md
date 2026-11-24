@@ -4,6 +4,7 @@ title: "Organizing Intelligence"
 date: 2026-11-23
 description: "Thoughts on \"Organizing Intelligence\" by Alex Imas, Andrew Koh, and Shane Legg (Google DeepMind, October 2026)."
 math: true
+tags: [paper review]
 ---
 
 On October 29th 2026, Google DeepMind has published the article *organizing intelligence* which postulates how AI will bring changes to the economic systems we have today. The article completely dodges the possibility of a super intelligent AI destroying humanity altogether. Instead it treats AI as new cheap workers pouring into the economy and competing with humans for tasks and jobs.
